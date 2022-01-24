@@ -60,6 +60,7 @@ footer section {
 
 footer .form-control {
   background-color: #cabeae;
+  border: none;
 }
 
 footer .form-control:focus {
@@ -108,6 +109,27 @@ footer .form-control:focus {
   background-color: #cabeae;
 }
 
+.c-logos {
+  margin: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-logos__logo {
+  list-style-type: none;
+  padding: 2rem;
+}
+
 .c-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,7 +155,7 @@ footer .form-control:focus {
 .c-footer {
   background-color: black;
   color: white;
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
 .c-footer i {

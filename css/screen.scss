@@ -78,6 +78,7 @@ footer{
     }
     & .form-control{
         background-color: $color-beige;
+        border: none;
         &:focus{
             background-color: $color-beige;
         }
@@ -129,6 +130,22 @@ footer{
     }
 }
 
+
+.c-logos{
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__logo{
+list-style-type: none;
+padding: 2rem;
+    }
+}
+
+
+
+
 .c-icons{
 display: flex;
 justify-content: space-evenly;
@@ -151,7 +168,7 @@ flex-direction: row;
 .c-footer{
     background-color: $color-black;
     color: $color-white;
-    padding: 2rem;
+    padding-top: 2rem;
     & i {
         font-size: $font-standaard;
     }
