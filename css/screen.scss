@@ -28,7 +28,7 @@ $font-size-xsmll: 0.6rem;
 *{
     box-sizing: border-box;
     font-family: $font-standaard;
-    // font-size: $font-size-normal;
+    font-size: $font-size-normal;
 }
 
 /*------------------------------------*\
@@ -38,18 +38,55 @@ body{
     position: relative;
   }
 
-// h1,h2,h3{
-//     font-family: $font-titles;
-// }
-// h1,h2{
-//     color: $color-brown;
-//     text-align: center;
-// }
+h1,h2,h3{
+    font-family: $font-titles;
+}
+
+h1,h2{
+    color: $color-brown;
+    text-align: center;
+}
 
 h1{
-    font-family: $font-titles;
-font-size: 4rem;
+    font-size: $font-size-title;
+    padding: 9rem 0 2rem 0;
+    
 }
+
+h2{
+    font-size: $font-size-subtitle;
+    padding: 3rem;
+}
+
+h3{
+    padding: 1rem 0;
+}
+
+section{
+    padding: 4rem 0 0 0;
+}
+
+iframe{
+    width: 100%;
+    padding: 0;
+    margin-top: 4rem;
+}
+
+footer{
+    & section{
+        padding: 0;
+    }
+    & .form-control{
+        background-color: $color-beige;
+        &:focus{
+            background-color: $color-beige;
+        }
+    }
+}
+
+
+
+
 /*------------------------------------*\
 #OBJECTS
 \*------------------------------------*/
@@ -64,6 +101,49 @@ font-size: 4rem;
     padding: 2rem 0;
 }
 
+.c-overons{
+    & p{
+        padding: 2rem 0;
+    }
+}
+
+.c-link{
+        color: $color-brown;
+    text-decoration: none;
+    transition: color 0.7s;
+    &:hover{
+        color: $color-beige;
+    }
+}
+
+.c-button{
+    padding: 0.7rem 0.7rem;
+    border: none;
+    border-radius: 10px;
+    background-color: $color-brown;
+    color: $color-white;
+    transition: background-color 0.7s;
+    margin-bottom: 3rem;
+    &:hover{
+        background-color: $color-beige;
+    }
+}
+
+.c-icons{
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+&__icon{
+    list-style-type: none;
+    margin: 2rem;
+    & i{
+        font-size: $font-size-subtitle;
+    }
+}
+}
+
+
+
 
 
 
@@ -71,6 +151,30 @@ font-size: 4rem;
 .c-footer{
     background-color: $color-black;
     color: $color-white;
+    padding: 2rem;
+    & i {
+        font-size: $font-standaard;
+    }
+    & a{
+        color: $color-white;
+        &:hover{
+            color: $color-beige;
+        }
+    }
+}
+
+.c-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    &__icon{
+        list-style-type: none;
+        margin-left: 1rem;
+    }
+}
+
+.c-copy{
+    font-size: $font-size-small;
 }
 
 .c-capture__howest{
@@ -86,6 +190,7 @@ font-size: 4rem;
 
 .nav-link{
         color: $color-brown;
+        transition: color 0.7s;
     &:hover{
         text-decoration: underline;
         color: $color-brown
@@ -108,6 +213,30 @@ font-size: 4rem;
     box-shadow: none;
 }
 
+.accordion-button:not(.collapsed){
+    color: $color-black;
+    background-color: $color-white;
+}
+.accordion-button:focus{
+    box-shadow: none;
+    border: 1px solid $color-light-brown;
+}
+.accordion-item{
+    border: 1px solid $color-light-brown;
+}
+.accordion-button::after{
+    background-image: url(../images/arrowdown.png);
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../images//arrowdown.png);
+}
+
+
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid;
+    border-bottom: 3px solid $color-light-brown;
+}
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
