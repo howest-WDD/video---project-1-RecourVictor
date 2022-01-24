@@ -11,7 +11,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Yantramanav", sans-serif;
-  font-size: 1rem;
 }
 
 /*------------------------------------*\
@@ -19,6 +18,11 @@
 \*------------------------------------*/
 body {
   position: relative;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 4rem;
 }
 
 /*------------------------------------*\
@@ -33,9 +37,50 @@ body {
   padding: 2rem 0;
 }
 
+.c-footer {
+  background-color: black;
+  color: white;
+}
+
+.c-capture__howest {
+  font-size: 0.6rem;
+}
+
 /*------------------------------------*\
 #BOOTSTRAP
 \*------------------------------------*/
+.navbar {
+  background-color: #cabeae;
+}
+
+.nav-link {
+  color: #543f26;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #543f26;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #543f26;
+  text-decoration: underline;
+  background-color: #cabeae;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/hamburger.png);
+  border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/

@@ -28,7 +28,7 @@ $font-size-xsmll: 0.6rem;
 *{
     box-sizing: border-box;
     font-family: $font-standaard;
-    font-size: $font-size-normal;
+    // font-size: $font-size-normal;
 }
 
 /*------------------------------------*\
@@ -37,6 +37,19 @@ $font-size-xsmll: 0.6rem;
 body{
     position: relative;
   }
+
+// h1,h2,h3{
+//     font-family: $font-titles;
+// }
+// h1,h2{
+//     color: $color-brown;
+//     text-align: center;
+// }
+
+h1{
+    font-family: $font-titles;
+font-size: 4rem;
+}
 /*------------------------------------*\
 #OBJECTS
 \*------------------------------------*/
@@ -51,10 +64,49 @@ body{
     padding: 2rem 0;
 }
 
+
+
+
+
+.c-footer{
+    background-color: $color-black;
+    color: $color-white;
+}
+
+.c-capture__howest{
+    font-size: $font-size-xsmll;
+}
+
 /*------------------------------------*\
 #BOOTSTRAP
 \*------------------------------------*/
+.navbar{
+    background-color: $color-beige;
+}
 
+.nav-link{
+        color: $color-brown;
+    &:hover{
+        text-decoration: underline;
+        color: $color-brown
+    }
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: $color-brown;
+    text-decoration: underline;
+    background-color: $color-beige;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../images/hamburger.png);
+    border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 
 /*------------------------------------*\
 #UTILITIES
