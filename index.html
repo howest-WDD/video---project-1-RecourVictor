@@ -5,48 +5,242 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <title>Petcap</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-offset="0" data-target="#navbar_ID">
     <video src=""></video>
-    <nav></nav>
-    <main>
-      <h1>Petcap</h1>
-      <section></section>
-      <section>
-        <h2>Over ons</h2>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="img-fluid" width="200" height="52" /></a>
+        <ul id="main_nav" class="nav nav-pills ms-auto">
+          <li class="nav-item"><a class="nav-link scrollto" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link scrollto" href="#over-ons">Over ons</a></li>
+          <li class="nav-item"><a class="nav-link scrollto" href="#onze-merken">Onze merken</a></li>
+          <li class="nav-item"><a class="nav-link scrollto" href="#FAQ">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Petcap</h1>
+          </div>
+        </div>
+      </div>
+      <section class="c-image">
         <div class="container">
           <div class="row">
-            <div class="col-5">
-              <p>In 2013 werd Petcap opgericht door Alain Vandeputte.</p>
-            </div>
-            <div class="col-5">
-              <p>Elke lente en winter bieden wij een collectie hoeden en petten aan van City Sport. Deze Belgische firma, gevestigd te Ardooie, is een familiebedrijf waar petten nog in eigen atelier gemaakt worden. We hebben ook een hoeden- en pettencollectie van het gekende Amerikaanse merk Stetson onder andere de outdoor vitafelt hoeden, gekend voor zijn vormvaste en waterafstotende kwaliteit. Verder breiden we de collectie elk seizoen uit met eigen geselecteerde hoofdaccessoires van diverse merken.</p>
-            </div>
-            <div class="col-5">
-              <p>We zijn te vinden op verschillende tuin- en jachtbeurzen, alsook oldtimerevenementen en jaarlijks op de Kerstmarkt te Brugge op het Simon Stevinplein.</p>
+            <div class="col-12">
+              <img class="img-fluid" src="images/petten.png" alt="petten" width="1400" height="732" />
             </div>
           </div>
         </div>
       </section>
-      <section></section>
-      <section>
-        <h2>Onze merken</h2>
+      <section id="over-ons">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Over ons</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-5 offset-lg-1">
+              <p>In 2013 werd Petcap opgericht door Alain Vandeputte.</p>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-first">
+              <img src="images/etalage.png" alt="etalage" width="500" height="333" class="img-fluid" />
+            </div>
+            <div class="col-12 col-lg-5">
+              <p>Elke lente en winter bieden wij een collectie hoeden en petten aan van City Sport. Deze Belgische firma, gevestigd te Ardooie, is een familiebedrijf waar petten nog in eigen atelier gemaakt worden. We hebben ook een hoeden- en pettencollectie van het gekende Amerikaanse merk Stetson onder andere de outdoor vitafelt hoeden, gekend voor zijn vormvaste en waterafstotende kwaliteit. Verder breiden we de collectie elk seizoen uit met eigen geselecteerde hoofdaccessoires van diverse merken.</p>
+            </div>
+            <div class="col-12 col-lg-6 offset-lg-1">
+              <img src="images/rek.png" alt="" width="500" height="333" class="img-fluid" />
+            </div>
+            <div class="col-12 col-lg-5 order-lg-last offset-lg-1">
+              <p>We zijn te vinden op verschillende tuin- en jachtbeurzen, alsook oldtimerevenementen en jaarlijks op de Kerstmarkt te Brugge op het Simon Stevinplein.</p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img src="images/barsaline.png" alt="" width="500" height="357" class="img-fluid" />
+            </div>
+          </div>
+        </div>
       </section>
-      <section></section>
-      <section>
+      <section class="c-image">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="img-fluid" src="images/hoeden.png" alt="hoeden" width="1400" height="934" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="onze-merken">
+        <h2>Onze merken</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/citysport.png" class="d-block w-100" alt="citysport" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/barmah.png" class="d-block w-100" alt="barmah" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/stetson.png" class="d-block w-100" alt="stetson" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="c-image">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="img-fluid" src="images/hoedjes.png" alt="hoedjes" width="1400" height="934" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="FAQ">
         <h2>FAQ</h2>
         <div class="container">
           <div class="row">
-            <div class="col-8"></div>
+            <div class="col-8">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <p class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Wie heeft Petcap opgericht?</button>
+                  </p>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Petcap is opgericht door Alain Vandeputte.<br />Meer info over ons vind je <a href="#over-ons">hier</a>.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <p class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Staat Petcap nog op kerstmarkten nu ze en winkel hebben?</button>
+                  </p>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Petcap blijft voorlopig elk jaar op de kerstmarkt van Brugge staan. Wij staan elk jaar met een uitgebreide selectie petten en hoeden op het Simon Stevinplein.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <p class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Is jullie winkel een pop-up store of blijven jullie daar langere tijd?</button>
+                  </p>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Wij hebben besloten om een vaste waarde te blijven in de Brugse binnenstad. Je kan dus nog enkele jaren terecht in de <a href="https://www.google.com/maps/dir/50.8243663,3.2495293/Geldmuntstraat+30a,+8000+Brugge/@51.0119729,3.1279804,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c350d082c3d5e1:0xbfe06d926142f24e!2m2!1d3.2213696!2d51.2085763" target="_blank">Geldmuntstraat 30a, Brugge</a>.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <p class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Kan ik een product online bestellen?</button>
+                  </p>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Je kan producten online bestellen in onze <a href="https://petcap.be/" target="_blank">webshop</a> zelf verkiezen we dat we u persoonlijk helpen, kom dus gerust langs in onze winkel.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <p class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">Hoelang kan ik gebruik maken van jullie cadeaubon?</button>
+                  </p>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Je kan een cadeaubon komen afhalen in onze winkel.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <p class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">Waar bevindt jullie winkel zich?</button>
+                  </p>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Onze winkel bevindt zich in de Brugse binnenstad. (<a href="https://www.google.com/maps/dir/50.8243663,3.2495293/Geldmuntstraat+30a,+8000+Brugge/@51.0119729,3.1279804,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c350d082c3d5e1:0xbfe06d926142f24e!2m2!1d3.2213696!2d51.2085763" target="_blank">Geldmuntstraat 30A, Brugge</a>).</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section></section>
-      <section>
-        <h2>Contact</h2>
+      <section class="c-image">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="img-fluid" src="images/overzichtwinkel.png" alt="overzicht winkel" width="1400" height="934" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Contact</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+              <form action="#" method="post">
+                <div class="mb-3">
+                  <label for="voornaam" class="form-label">Uw voornaam</label>
+                  <input type="text" class="form-control" id="voornaam" placeholder="Victor" />
+                </div>
+                <div class="mb-3">
+                  <label for="achternaam" class="form-label">Uw achternaam</label>
+                  <input type="text" class="form-control" id="achternaam" placeholder="Recour" />
+                </div>
+                <div class="mb-3">
+                  <label for="telefoon" class="form-label">Uw telefoonnummer</label>
+                  <input type="tel" class="form-control" id="telefoon" placeholder="+32 0412 34 56" />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Uw email</label>
+                  <input type="email" class="form-control" id="email" placeholder="victor.recour@student.howest.be" />
+                </div>
+                <div class="mb-3">
+                  <label for="klacht" class="form-label">Uw vraag of opmerking</label>
+                  <textarea id="klacht" cols="30" rows="5" class="form-control" placeholder="Formulier hier uw vraag/opmerking."></textarea>
+                </div>
+                <button type="button" class="c-button btn btn-primary">Contacteer ons</button>
+              </form>
+            </div>
+            <div class="col-5">
+              <p>Maandag: 10u-18u<br />Dinsdag: 10u-18u<br />Woensdag: 10u-18u<br />Donderdag: 10u-18u<br />Vrijdag: 10u-18u<br />Zaterdag: 10u-18u<br />Zondag*: 10u-18u<br /></p>
+              <p>*enkel open op de eerste zondag van de maand</p>
+              <p>Geldmuntstraat 30a<br />8000 Brugge<br />Belgium</p>
+              <div>
+                <ul>
+                  <li>
+                    <a href="mailto:info@petcap.be"><i class="bi bi-envelope-fill"></i></a>
+                  </li>
+                  <li>
+                    <a href="tel:0496 / 70 22 67"><i class="bi bi-telephone-fill"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.google.com/maps/dir/50.8243663,3.2495293/Geldmuntstraat+30a,+8000+Brugge/@51.0119729,3.1279804,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c350d082c3d5e1:0xbfe06d926142f24e!2m2!1d3.2213696!2d51.2085763" target="_blank"><i class="bi bi-geo-alt-fill"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
@@ -82,10 +276,10 @@
             <div class="col-4">
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/petcap" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/petcap.be/" target="_blank"><i class="bi bi-instagram"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/petcap.be/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.facebook.com/petcap" target="_blank"><i class="bi bi-facebook"></i></a>
                 </li>
                 <li>
                   <a href="mailto:info@petcap.be"><i class="bi bi-envelope-fill"></i></a>
@@ -96,17 +290,19 @@
         </div>
       </section>
       <section>
-          <div class="container">
-              <div class="row">
-                  <div class="col-4">
-                      <img src="" alt="">
-                  </div>
-                  <div class="col-12">
-                      <p>Deze site is ontworpen voor en schoolopdracht.<br>
-                        Dit is dus GEEN oficiële website!</p>
-                  </div>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="images/logohowest.png" alt="logo howest" class="img-fluid" width="546" height="280" />
+            </div>
+            <div class="col-12">
+              <p>
+                Deze site is ontworpen voor en schoolopdracht.<br />
+                Dit is dus GEEN oficiële website!
+              </p>
+            </div>
           </div>
+        </div>
       </section>
     </footer>
 
