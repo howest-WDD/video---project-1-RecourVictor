@@ -67,6 +67,11 @@ footer .form-control:focus {
   background-color: #cabeae;
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
+
 /*------------------------------------*\
 #OBJECTS
 \*------------------------------------*/
@@ -77,6 +82,10 @@ footer .form-control:focus {
   background-color: #5d513c;
   margin: 2rem 0;
   padding: 2rem 0;
+}
+
+.c-image__video {
+  margin: 0;
 }
 
 .c-overons p {

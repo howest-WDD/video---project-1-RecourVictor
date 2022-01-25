@@ -85,7 +85,10 @@ footer{
     }
 }
 
-
+video{
+    width: 100%;
+    height: auto;
+}
 
 
 /*------------------------------------*\
@@ -100,6 +103,9 @@ footer{
     background-color: $color-light-brown;
     margin: 2rem 0;
     padding: 2rem 0;
+    &__video{
+        margin: 0;
+    }
 }
 
 .c-overons{
