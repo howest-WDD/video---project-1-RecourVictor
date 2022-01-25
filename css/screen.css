@@ -21,11 +21,14 @@ body {
   position: relative;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Merriweather", serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #543f26;
   text-align: center;
 }
@@ -223,7 +226,8 @@ video {
   color: #543f26;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: #543f26;
   text-decoration: underline;
   background-color: #cabeae;

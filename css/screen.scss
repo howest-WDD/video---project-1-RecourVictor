@@ -3,9 +3,8 @@
 \*------------------------------------*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 $color-brown: #543f26;
 $color-light-brown: #5d513c;
@@ -13,8 +12,8 @@ $color-beige: #cabeae;
 $color-black: black;
 $color-white: white;
 
-$font-standaard:'Yantramanav', sans-serif;
-$font-titles:'Merriweather', serif;
+$font-standaard: "Yantramanav", sans-serif;
+$font-titles: "Merriweather", serif;
 
 $font-size-title: 4rem;
 $font-size-subtitle: 3rem;
@@ -25,241 +24,233 @@ $font-size-xsmll: 0.6rem;
 /*------------------------------------*\
 #GENERIC
 \*------------------------------------*/
-*{
-    box-sizing: border-box;
-    font-family: $font-standaard;
-    font-size: $font-size-normal;
+* {
+  box-sizing: border-box;
+  font-family: $font-standaard;
+  font-size: $font-size-normal;
 }
 
 /*------------------------------------*\
 #ELEMENTS
 \*------------------------------------*/
-body{
-    position: relative;
-  }
-
-h1,h2,h3{
-    font-family: $font-titles;
+body {
+  position: relative;
 }
 
-h1,h2{
-    color: $color-brown;
-    text-align: center;
+h1,
+h2,
+h3 {
+  font-family: $font-titles;
 }
 
-h1{
-    font-size: $font-size-title;
-    padding: 9rem 0 2rem 0;
-    
+h1,
+h2 {
+  color: $color-brown;
+  text-align: center;
 }
 
-h2{
-    font-size: $font-size-subtitle;
-    padding: 3rem;
+h1 {
+  font-size: $font-size-title;
+  padding: 9rem 0 2rem 0;
 }
 
-h3{
-    padding: 1rem 0;
+h2 {
+  font-size: $font-size-subtitle;
+  padding: 3rem;
 }
 
-section{
-    padding: 4rem 0 0 0;
+h3 {
+  padding: 1rem 0;
 }
 
-iframe{
-    width: 100%;
+section {
+  padding: 4rem 0 0 0;
+}
+
+iframe {
+  width: 100%;
+  padding: 0;
+  margin-top: 4rem;
+}
+
+footer {
+  & section {
     padding: 0;
-    margin-top: 4rem;
-}
-
-footer{
-    & section{
-        padding: 0;
+  }
+  & .form-control {
+    background-color: $color-beige;
+    border: none;
+    &:focus {
+      background-color: $color-beige;
     }
-    & .form-control{
-        background-color: $color-beige;
-        border: none;
-        &:focus{
-            background-color: $color-beige;
-        }
-    }
+  }
 }
 
-video{
-    width: 100%;
-    height: auto;
+video {
+  width: 100%;
+  height: auto;
 }
-
 
 /*------------------------------------*\
 #OBJECTS
 \*------------------------------------*/
 
-
 /*------------------------------------*\
 #COMPONENTS
 \*------------------------------------*/
-.c-image{
-    background-color: $color-light-brown;
-    margin: 2rem 0;
+.c-image {
+  background-color: $color-light-brown;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  &__video {
+    margin: 0;
+  }
+}
+
+.c-overons {
+  & p {
     padding: 2rem 0;
-    &__video{
-        margin: 0;
-    }
+  }
 }
 
-.c-overons{
-    & p{
-        padding: 2rem 0;
-    }
+.c-link {
+  color: $color-brown;
+  text-decoration: none;
+  transition: color 0.7s;
+  &:hover {
+    color: $color-beige;
+  }
 }
 
-.c-link{
-        color: $color-brown;
-    text-decoration: none;
-    transition: color 0.7s;
-    &:hover{
-        color: $color-beige;
-    }
+.c-button {
+  padding: 0.7rem 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background-color: $color-brown;
+  color: $color-white;
+  transition: background-color 0.7s;
+  margin-bottom: 3rem;
+  &:hover {
+    background-color: $color-beige;
+  }
 }
 
-.c-button{
-    padding: 0.7rem 0.7rem;
-    border: none;
-    border-radius: 10px;
-    background-color: $color-brown;
-    color: $color-white;
-    transition: background-color 0.7s;
-    margin-bottom: 3rem;
-    &:hover{
-        background-color: $color-beige;
-    }
+.c-logos {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__logo {
+    list-style-type: none;
+    padding: 2rem;
+  }
 }
 
-
-.c-logos{
-    margin: 3rem 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    &__logo{
-list-style-type: none;
-padding: 2rem;
-    }
-}
-
-
-
-
-.c-icons{
-display: flex;
-justify-content: space-evenly;
-flex-direction: row;
-&__icon{
+.c-icons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  &__icon {
     list-style-type: none;
     margin: 2rem;
-    & i{
-        font-size: $font-size-subtitle;
-    }
-}
-}
-
-
-
-
-
-
-
-.c-footer{
-    background-color: $color-black;
-    color: $color-white;
-    padding-top: 2rem;
     & i {
-        font-size: $font-standaard;
+      font-size: $font-size-subtitle;
     }
-    & a{
-        color: $color-white;
-        &:hover{
-            color: $color-beige;
-        }
-    }
+  }
 }
 
-.c-socials{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    &__icon{
-        list-style-type: none;
-        margin-left: 1rem;
+.c-footer {
+  background-color: $color-black;
+  color: $color-white;
+  padding-top: 2rem;
+  & i {
+    font-size: $font-standaard;
+  }
+  & a {
+    color: $color-white;
+    &:hover {
+      color: $color-beige;
     }
+  }
 }
 
-.c-copy{
-    font-size: $font-size-small;
+.c-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  &__icon {
+    list-style-type: none;
+    margin-left: 1rem;
+  }
 }
 
-.c-capture__howest{
-    font-size: $font-size-xsmll;
+.c-copy {
+  font-size: $font-size-small;
+}
+
+.c-capture__howest {
+  font-size: $font-size-xsmll;
 }
 
 /*------------------------------------*\
 #BOOTSTRAP
 \*------------------------------------*/
-.navbar{
-    background-color: $color-beige;
+.navbar {
+  background-color: $color-beige;
 }
 
-.nav-link{
-        color: $color-brown;
-        transition: color 0.7s;
-    &:hover{
-        text-decoration: underline;
-        color: $color-brown
-    }
-}
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    color: $color-brown;
+.nav-link {
+  color: $color-brown;
+  transition: color 0.7s;
+  &:hover {
     text-decoration: underline;
-    background-color: $color-beige;
+    color: $color-brown;
+  }
 }
 
-.navbar-toggler-icon{
-    background-image: url(../images/hamburger.png);
-    border: none;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: $color-brown;
+  text-decoration: underline;
+  background-color: $color-beige;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/hamburger.png);
+  border: none;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
-.accordion-button:not(.collapsed){
-    color: $color-black;
-    background-color: $color-white;
+.accordion-button:not(.collapsed) {
+  color: $color-black;
+  background-color: $color-white;
 }
-.accordion-button:focus{
-    box-shadow: none;
-    border: 1px solid $color-light-brown;
+.accordion-button:focus {
+  box-shadow: none;
+  border: 1px solid $color-light-brown;
 }
-.accordion-item{
-    border: 1px solid $color-light-brown;
+.accordion-item {
+  border: 1px solid $color-light-brown;
 }
-.accordion-button::after{
-    background-image: url(../images/arrowdown.png);
+.accordion-button::after {
+  background-image: url(../images/arrowdown.png);
 }
-.accordion-button:not(.collapsed)::after{
-    background-image: url(../images//arrowdown.png);
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images//arrowdown.png);
 }
 
-
-.form-control:focus{
-    box-shadow: none;
-    border: 1px solid;
-    border-bottom: 3px solid $color-light-brown;
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid;
+  border-bottom: 3px solid $color-light-brown;
 }
+
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
