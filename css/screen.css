@@ -9,7 +9,7 @@
 \*------------------------------------*/
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Yantramanav", sans-serif;
   font-size: 1rem;
   position: relative;
@@ -53,27 +53,10 @@ iframe {
   padding: 0;
 }
 
-footer section {
-  padding: 0;
-}
-
-footer .form-control {
-  background-color: #cabeae;
-  border: none;
-}
-
-footer .form-control:focus {
-  background-color: #cabeae;
-}
-
 video {
   width: 100%;
   height: auto;
-}
-
-a {
-  -webkit-transition: color 0.7s;
-  transition: color 0.7s;
+  max-height: 100vh;
 }
 
 /*------------------------------------*\
@@ -106,6 +89,8 @@ a {
 .c-link {
   color: #543f26;
   text-decoration: none;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
 }
 
 .c-link:hover {
@@ -134,13 +119,13 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0;
 }
 
@@ -158,18 +143,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0;
 }
 
 .c-icons--icon {
   list-style-type: none;
-  margin: 2rem;
+  padding: 2rem 2rem 2rem 0;
 }
 
 .c-icons--icon i {
@@ -194,17 +180,27 @@ a {
   color: #cabeae;
 }
 
+.c-footer__form {
+  padding: 0.7rem 0.7rem;
+  background-color: #cabeae;
+  border: none;
+}
+
+.c-footer__form:focus {
+  background-color: #cabeae;
+}
+
 .c-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c-socials--icon {
@@ -253,7 +249,7 @@ a {
 .navbar-toggler-icon:focus {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -272,12 +268,12 @@ a {
   color: black;
   background-color: white;
   -webkit-box-shadow: inset 0 -0.34px 0 #543f26;
-          box-shadow: inset 0 -0.34px 0 #543f26;
+  box-shadow: inset 0 -0.34px 0 #543f26;
 }
 
 .accordion-button:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 1px solid #5d513c;
 }
 
@@ -295,7 +291,7 @@ a {
 
 .form-control:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 1px solid #5d513c;
   border-bottom: 3px solid #5d513c;
 }
